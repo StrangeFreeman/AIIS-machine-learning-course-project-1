@@ -21,6 +21,8 @@ GT2 = gpuArray([y_train; y_test]);
 FT_GT2= gpuArray([featuretable2, GT2]);
 index2 = gpuArray(randi([1 10], 10299, 1 ));
 
+index = randi([1 10], 10299, 1);
+
 for kfold = 1:10
     test = (index==kfold);
     train = ~test;
