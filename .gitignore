@@ -1,0 +1,28 @@
+# Ignore feature and label metadata
+features_info.txt
+features.txt
+activity_labels.txt
+
+# Ignore train/test main feature files
+train/X_train.txt
+train/y_train.txt
+test/X_test.txt
+test/y_test.txt
+
+# Ignore train/test subject files
+train/subject_train.txt
+test/subject_test.txt
+
+# Ignore inertial signal folders (train + test)
+train/Inertial\ Signals/
+test/Inertial\ Signals/
+
+# Or explicitly ignore all inertial signal files (optional, if you prefer exact matching)
+train/Inertial Signals/*.txt
+test/Inertial Signals/*.txt
+
+# Optional: ignore entire train/test dataset folders
+# (Uncomment if you want to ignore everything under train/ and test/)
+train/
+test/
+UCI HAR Dataset.names
